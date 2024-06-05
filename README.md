@@ -1,0 +1,1 @@
+majd lesz leiras
