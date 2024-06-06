@@ -1,10 +1,16 @@
 :root {
     --dark: #222222;
     --darker: #151515;
-    --selected: #0073ff;
-    --test-selected: #009416;
-    --game-selected: #ec2f2f;
-    --href-selected: #cfe600;
+
+    --blue: #0073ff;
+    --green: #009416;
+    --red: #ec2f2f;
+    --yellow: #cfe600;
+
+    --grad1: #000000;
+    --grad2: #121112;
+    --grad3: #2e3436;
+    --grad4: #222e2d;
 }
 
 html, body {
@@ -25,7 +31,11 @@ html, body {
 
 #main {
     margin: 0 auto 0 auto;
-    background-color: var(--dark);
+    
+    background: linear-gradient(-45deg, var(--grad1), var(--grad2), var(--grad3), var(--grad4));
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+
     color: white;
     display: flex;
     flex-direction: column;
@@ -33,6 +43,21 @@ html, body {
     height: 100%;
     font-family: sans-serif;
     padding: 0px 30px 0px 30px;
+    -webkit-box-shadow: set 0px 0px 13px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+}
+
+@keyframes gradient {
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 #title {
@@ -71,14 +96,14 @@ html, body {
 }
 
 .navitem:hover {
-    color: var(--selected);
+    color: var(--blue);
     cursor: pointer;
 }
 .test:hover {
-    color: var(--test-selected);
+    color: var(--green);
 }
 .game:hover {
-    color: var(--game-selected);
+    color: var(--red);
 }
 
 .navitem:hover:before {
@@ -125,15 +150,15 @@ html, body {
 }
 
 .selected-text {
-    color: var(--selected);
+    color: var(--blue);
     text-decoration: underline;
 }
 .selected-test {
-    color: var(--test-selected);
+    color: var(--green);
     text-decoration: underline;
 }
 .selected-game {
-    color: var(--game-selected);
+    color: var(--red);
     text-decoration: underline;
 }
 
@@ -150,21 +175,39 @@ html, body {
     padding-bottom: 10px;
 }
 #img-little_boy_inner {
-    border: 1px solid white;
-    margin-left: 10px;
-    width: 25%;
-    float: right;
-    padding: 10px;
+    width: 100%;
 }
 
-a {
-    color: var(--href-selected);
-}
+a {color: var(--yellow);}
 
 #img-hirosima {
-    width: 40%;
-    margin-top: 20px;
+    width: 30%;
+    margin-top: 10px;
     margin-left: 20px;
     border: 5px solid white;
     float: right;
+}
+
+#lb_data {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    border-radius: 1vw;
+    float: right;
+    width: 30%;
+    margin: 20px;
+    margin-top: 0px;
+    padding: 10px;
+}
+
+#lb_img {
+    margin: auto;
+}
+
+#lb_hr {
+    width: 100%;
+}
+
+#lb_desc {
+    text-align: center;
 }

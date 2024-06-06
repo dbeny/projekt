@@ -20,7 +20,7 @@ navItems.forEach(i => {
     }
 })
 
-document.getElementById("elozmenyek").click()
+document.getElementById("little_boy").click()
 
 //checkboxok
 const check1 = document.getElementById("check1")
