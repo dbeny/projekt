@@ -20,10 +20,7 @@ navItems.forEach(i => {
     }
 })
 
-//eredeti: document.getElementById("elozmenyek").click()
-document.getElementById("tamadas").click()
-
-
+document.getElementById("elozmenyek").click()
 
 //checkboxok
 const check1 = document.getElementById("check1")
