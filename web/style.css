@@ -137,11 +137,11 @@ html, body {
 }
 
 .big {
-    font-size: 2.5vh;
+    font-size: 1.5rem;
 }
 
 .bigger {
-    font-size: 6vh;
+    font-size: 3.3rem;
 }
 
 .hidden {
@@ -212,5 +212,5 @@ a {color: var(--yellow);}
 }
 
 #test_form {
-    font-size: 3vh;
+    font-size: 1.5rem;
 }
