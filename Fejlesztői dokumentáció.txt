@@ -1,0 +1,42 @@
+A weboldal felépítése egyszerű, lényegében három fő részre lehet osztani:
+- fej
+- navigáció
+- tartalom doboz
+
+Fej:
+- tartalmazza a készítő nevét, a készítés dátumát (év, hó)
+- tartalmazza a weblap és a téma címét
+
+Navigáció:
+- tartalmazza a weboldal témájához illő leírásokat
+  - előzmények
+  - a little boy
+  - az atomtámadás
+- tartalmazza a kitölthető tudáspróbát
+- tartalmazza az akasztófa játékot
+
+Tartalom doboz:
+- tartalmazza a navigációban a jelenleg kiválasztott aloldal 
+  saját tartalmát ("stuff" osztály)
+
+-------------------------------------------------------
+
+Külső js fájl (script.js):
+Két fontos funkcionalitása van:
+- kezeli a navigációt amivel meg lehet mutatni,
+  hogy a felhasználó melyik kategóriát választotta ki,
+  és a kategória tartalmát is kimutatja/eltűnteti
+
+- a "handleForm" funkció kezeli a tudáspróba válaszainak
+  a lekérését és megmondja, hogy a felhasználó küldéskor 
+  helyes, avagy helytelen válaszokat adott meg, és kimutatja
+  a helyes válaszokat
+
+- további információ a kódról megtalálható a fájlban komment formájában
+
+-------------------------------------------------------
+
+Külső css fájl (style.css):
+- kezeli a weboldal egész css állományát, a színektől kezdve
+  az oldal flexboxos felépítését, a szövegek megjelenítését, 
+  a betűméreteket...
