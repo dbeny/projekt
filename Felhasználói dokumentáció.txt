@@ -1,1 +1,4 @@
-A weboldalon a bal oldalt található egy "Tartalom" navigációs panel, itt a szövegekre kattintva érhetjük el az adott kategóriát, amit meg szeretnénk tekinteni. A "Teszt" gombra kattintva elérhető lesz egy tudáspróba, melyhez kötelező megadni egy nevet és ha elkészülünk, a "Küldés" gomb megnyomásával megtekinthetjük a válaszaink helyességét.
+A weboldalon a bal oldalt található egy "Tartalom" navigációs panel, 
+itt a szövegekre kattintva érhetjük el az adott kategóriát, amit meg szeretnénk tekinteni. 
+A "Teszt" gombra kattintva elérhető lesz egy tudáspróba, melyhez kötelező megadni egy nevet és ha elkészülünk, 
+a "Küldés" gomb megnyomásával megtekinthetjük a válaszaink helyességét.
