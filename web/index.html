@@ -18,8 +18,6 @@
                         <li class="navitem" id="elozmenyek">Előzmények</li>
                         <li class="navitem" id="little_boy">A Little Boy</li>
                         <li class="navitem" id="tamadas">Az atomtámadás</li>
-                        <li class="navitem" id="utohatas">Utóhatás</li>
-                        <li class="navitem" id="soha_tobbe">"Soha többé hirosimát!"</li>
                         <hr>
                         <li class="navitem test" id="test">Teszt</li>
                         <li class="navitem game" id="game">Flappy Bomb</li>
@@ -27,7 +25,7 @@
                 </div>
                 <div id="content">
                     <div id="stuff-list">
-                        <div class="stuff hidden" id="p-elozmenyek">
+                        <div class="stuff big hidden" id="p-elozmenyek">
                             <p>
                                 <img id="img-planes" src="img/planes.png">
                                 A japán város, Hirosima bombázása a második világháborút lezáró egyik
@@ -51,7 +49,7 @@
                                 fenyegetve, ám ezt a szigetország kormánya figyelmen kívül hagyta.
                             </p>
                         </div>
-                        <div class="stuff hidden" id="p-little_boy">
+                        <div class="stuff big hidden" id="p-little_boy">
                             <p>
                                 <img id="img-little_boy" src="img/little_boy.jpg">
                                 <div id="lb_data">
@@ -87,7 +85,7 @@
                                 tetszőlegesen növelni, mivel egy kritikus tömeg felett külső hatás nélkül is beindul bennük a láncreakció.
                             </p>
                         </div>
-                        <div class="stuff hidden" id="p-tamadas">
+                        <div class="stuff big hidden" id="p-tamadas">
                             <p>
                                 <img id="img-hirosima" src="img/hirosima1.jpg">
                                 Az amerikaiak éppen az Új-Mexikói sivatagban tesztelték az első atombombát, 
@@ -113,29 +111,58 @@
                                 tette Hirosimát. Az atomtámadás 140 ezer ember életét követelte, 70 ezer ember azonnal meghalt, 
                                 a többiek pedig később, a sugárzás okozta betegségek következtében, amely ma is érezteti hatását.
                             </p>
-                        </div>
-                        <div class="stuff hidden" id="p-utohatas">
                             <p>
                                 A következő hónapokban számtalan ember halt bele a sugárbetegségbe, az égési sérülésekbe, 
                                 és az egyéb sebesülésekbe, vagy a sugárzás következtében kialakult egyéb betegségekbe. Bár 
                                 Hirosimának volt jókora helyőrsége is, mindkét városban többségükben civilek vesztették életüket.
                             </p>
                         </div>
-                        <div class="stuff hidden" id="p-soha_tobbe">
-                            
+                        <div class="stuff big hidden" id="p-test">
+                            <form id="test_form">
+                                <div id="test_question">
+                                    <label for="form_name">Neved:</label>
+                                    <input type="text" id="form_name" required>
+                                </div>
+                                <hr width="100%">
+                                <div id="test_question">
+                                    <span>1. Mikor dobták le Hirosimára az atombombát?</span>
+                                    <br><input type="text" id="form_1" required> 
+                                </div>
+                                <br>
+                                <div id="test_question">
+                                    <span>2. Az USA-n kívül ki fenyegette meg Japánt, hogy vonuljanak vissza?</span>
+                                    <br><input type="text" id="form_2" required>
+                                </div>
+                                <br>
+                                <div id="test_question">
+                                    <span>3. Hogy hívták a japán miniszterelnököt?</span>
+                                    <br>
+                                    <input type="radio" name="f3" id="form_3-1">Kuniaki Koiso<br>
+                                    <input type="radio" name="f3" id="form_3-2">Szuzuki Yuyetsu<br>
+                                    <input type="radio" name="f3" id="form_3-3">Kantaro Szuzuki
+                                </div>
+                                <br>
+                                <div id="test_question">
+                                    <span>4. A megtervezett helyek közül hova dobtak le atombombát?</span>
+                                    <br>
+                                    <input type="checkbox" name="f4" id="form_4-1">Hirosima<br>
+                                    <input type="checkbox" name="f4" id="form_4-2">Osaka<br>
+                                    <input type="checkbox" name="f4" id="form_4-3">Nagasaki<br>
+                                    <input type="checkbox" name="f4" id="form_4-4">Tokio
+                                </div>
+                                <br>
+                                <div id="test_question">
+                                    <span>5. Mikor írta alá a náci Németország a fegyverletételi nyilatkozatot?</span>
+                                    <br><input type="date" id="form_5">
+                                </div>
+                                <br>
+                                <hr>
+                                <div id="test_question">
+                                    <input type="button" id="form_submit" value="Küldés" onclick="handleForm()">
+                                </div>
+                            </form>
                         </div>
-                        <div class="stuff hidden" id="p-test">
-                            <span>Mikor dobták le a bombát?</span>
-                            input
-                            <ul>
-                                <li><input type="checkbox" id="check1">1944</li>
-                                <li><input type="checkbox" id="check2">1945</li>
-                                <li><input type="checkbox" id="check3">1946</li>
-                            </ul>
-                            <button id="ellenorzo">Ellenőrzés</button>
-                            <span>Eredmény: <span id="eredmeny"></span></span>
-                        </div>
-                        <p class="stuff hidden" id="p-game">
+                        <p class="stuff big hidden" id="p-game">
                             gameszko
                         </p>
                     </div>

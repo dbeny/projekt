@@ -22,33 +22,35 @@ navItems.forEach(i => {
 
 document.getElementById("elozmenyek").click()
 
-//checkboxok
-const check1 = document.getElementById("check1")
-const check2 = document.getElementById("check2") // jó
-const check3 = document.getElementById("check3")
-
-//gomb
-const ellenorzo = document.getElementById("ellenorzo")
-//szövegdoboz
-const eredmeny = document.getElementById("eredmeny")
-
-const checkboxok = [check1, check2, check3]
-checkboxok.forEach(e => {
-    e.onclick = function() {
-        const e_id = e.id
-        checkboxok.forEach(e2 => {
-            const e2_id = e2.id
-            if (e_id != e2_id) {
-                e2.checked = false
-            }
-        })
-    }
-})
-
-ellenorzo.onclick = function() {
-    if (check2.checked && !check1.checked && !check3.checked) {
-        eredmeny.innerText = "Jó válasz"
-    } else {
-        eredmeny.innerText = "Rossz válasz"
-    }
+function handleForm() {
+    const name = document.getElementById("form_name").value
+    const a1 = document.getElementById("form_1").value
+    const a2 = document.getElementById("form_2").value
+    const a3 = [
+        document.getElementById("form_3-1").checked,
+        document.getElementById("form_3-2").checked,
+        document.getElementById("form_3-3").checked
+    ]
+    const a4 = [
+        document.getElementById("form_4-1").checked,
+        document.getElementById("form_4-2").checked,
+        document.getElementById("form_4-3").checked,
+        document.getElementById("form_4-4").checked
+    ]
+    const a5 = document.getElementById("form_5").value
+    const a1Correct = (a1=="1945")
+    const a2Correct = (a2.toLowerCase()=="kína" || a2.toLowerCase()=="kina")
+    const a3Correct = (a3[2])
+    const a4Correct = (a4[0] && !a4[1] && a4[2] && !a4[3])
+    const a5Correct = (a5=="1945-05-08")
+    const a1str = `${(a1Correct ? "Helyes" : "Helytelen")} - 1945`
+    const a2str = `${(a2Correct ? "Helyes" : "Helytelen")} - Kína`
+    const a3str = `${(a3Correct ? "Helyes" : "Helytelen")} - Kantaro Szuzuki`
+    const a4str = `${(a4Correct ? "Helyes" : "Helytelen")} - Hirosima & Nagasaki`
+    const a5str = `${(a5Correct ? "Helyes" : "Helytelen")} - 1945. Máj. 8.`
+    alert(
+        name + ", itt vannak az eredményeid a helyes válaszokkal!" + "\n" + 
+        a1str + "\n" + a2str + "\n" + a3str + "\n" + a4str + "\n" + a5str
+    )
+    document.getElementById("elozmenyek").click()
 }
